@@ -6,9 +6,7 @@ export default class Modal extends Component {
   render() {
     return (
       <Portal>
-        <ModalWrapper>
-          <h1>TEST</h1>
-        </ModalWrapper>
+        <ModalWrapper>{this.props.children}</ModalWrapper>
       </Portal>
     );
   }
