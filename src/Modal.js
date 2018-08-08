@@ -4,7 +4,13 @@ import styled from 'styled-components';
 
 export default class Modal extends Component {
   render() {
-    return <Portal />;
+    return (
+      <Portal>
+        <ModalWrapper>
+          <h1>TEST</h1>
+        </ModalWrapper>
+      </Portal>
+    );
   }
 }
 
@@ -14,4 +20,5 @@ const ModalWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  background: teal;
 `;
