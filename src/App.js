@@ -16,11 +16,9 @@ class App extends Component {
         <Modal />
         <Toggle>
           {({ on, toggle }) => (
-            <Fragment>
-              {on && <h1>Show Me</h1>}
-              <button onClick={toggle}>Show / Hide</button>
-              <Portal>{on && <h1>Test2</h1>}</Portal>
-            </Fragment>
+            <Modal>
+              <h1>Child Element</h1>
+            </Modal>
           )}
         </Toggle>
         <Portal>
