@@ -10,7 +10,7 @@ export default class Modal extends Component {
         {on && (
           <ModalWrapper>
             <ModalWindow>
-              <button onClick={toggle}>Close</button>
+              <CloseButton onClick={toggle}>Close</CloseButton>
               <div>{children}</div>
             </ModalWindow>
           </ModalWrapper>
@@ -34,4 +34,10 @@ const ModalWrapper = styled.div`
 
 const ModalWindow = styled.div`
   position: relative;
+`;
+
+const CloseButton = styled.button`
+  position: absolute;
+  top: 0;
+  right: 0;
 `;
