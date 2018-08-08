@@ -16,7 +16,7 @@ class App extends Component {
         <Modal />
         <Toggle>
           {({ on, toggle }) => (
-            <Modal>
+            <Modal on={on} toggle={toggle}>
               <h1>Child Element</h1>
             </Modal>
           )}
