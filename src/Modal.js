@@ -7,7 +7,12 @@ export default class Modal extends Component {
     const { children, toggle, on } = this.props;
     return (
       <Portal>
-        <ModalWrapper>{children}</ModalWrapper>
+        {on && (
+          <ModalWrapper>
+            <button onClick={toggle}>Close</button>
+            <div>{children}</div>
+          </ModalWrapper>
+        )}
       </Portal>
     );
   }
