@@ -13,7 +13,7 @@ export default class Modal extends Component {
               <CloseButton onClick={toggle}>Close</CloseButton>
               <div>{children}</div>
             </ModalCard>
-            <Background />
+            <Background onClick={toggle} />
           </ModalWrapper>
         )}
       </Portal>
@@ -54,5 +54,5 @@ const Background = styled.div`
   top: 0;
   left: 0;
   background: black;
-  opacity: 0.3;
+  opacity: 0.5;
 `;
