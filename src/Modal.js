@@ -9,10 +9,10 @@ export default class Modal extends Component {
       <Portal>
         {on && (
           <ModalWrapper>
-            <ModalWindow>
+            <ModalCard>
               <CloseButton onClick={toggle}>Close</CloseButton>
               <div>{children}</div>
-            </ModalWindow>
+            </ModalCard>
           </ModalWrapper>
         )}
       </Portal>
@@ -32,8 +32,12 @@ const ModalWrapper = styled.div`
   align-items: center;
 `;
 
-const ModalWindow = styled.div`
+const ModalCard = styled.div`
   position: relative;
+  background: white;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 `;
 
 const CloseButton = styled.button`
