@@ -7,3 +7,11 @@ export default class Modal extends Component {
     return <Portal />;
   }
 }
+
+const ModalWrapper = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+`;
