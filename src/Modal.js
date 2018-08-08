@@ -4,9 +4,10 @@ import styled from 'styled-components';
 
 export default class Modal extends Component {
   render() {
+    const { children, toggle, on } = this.props;
     return (
       <Portal>
-        <ModalWrapper>{this.props.children}</ModalWrapper>
+        <ModalWrapper>{children}</ModalWrapper>
       </Portal>
     );
   }
